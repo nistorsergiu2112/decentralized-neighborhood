@@ -2,7 +2,7 @@ pragma experimental ABIEncoderV2;
 pragma solidity >=0.4.21 <0.6.0;
 
 import './Verifier.sol';
-import './CustomERC721Mintable.sol';
+import './ERC721Mintable.sol';
 
 contract SolnSquareVerifier is CustomERC721Mintable {
     Verifier verifierContract;
@@ -10,8 +10,6 @@ contract SolnSquareVerifier is CustomERC721Mintable {
     constructor(string memory name, string memory symbol) CustomERC721Mintable(name, symbol) public {
         verifierContract = new Verifier();
     }
-
-
 
     struct Solutions {
         uint256 index;
