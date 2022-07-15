@@ -2,7 +2,7 @@
 
 In this project you will be minting your own tokens to represent your title to the properties. Before you mint a token, you need to verify you own the property. You will use zk-SNARKs to create a verification system which can prove you have title to the property without revealing that specific information on the property.
 
-##Tech stack used in this project:
+## Tech stack used in this project:
 Solidity(smart contracts) ~ Truffle (testing/tooling) ~ Ganache(local blockchain) ~ Infura(Deploying) ~ OpenZeppelin(Contracts) - OpenSea(Marketplace)
 ZoKrates(Succinct Zero-Knowledge proofs) - Remix(Env for Zokrates)
 
@@ -27,8 +27,8 @@ Create mnemonic and infura key, then ->
 truffle migrate --reset --network rinkeby --compile-all
 ```
 ### Contract Interaction
-My deployed contract can be found at https://rinkeby.etherscan.io/address/0xf46853d711edfb4cca90f60ceeecb1d78c056ec9
-Interact with the contract using https://www.myetherwallet.com/
+- My deployed contract can be found at https://rinkeby.etherscan.io/address/0xf46853d711edfb4cca90f60ceeecb1d78c056ec9
+- Interact with the contract using https://www.myetherwallet.com/
 ### Generating Zokrates Proof
 use article : https://medium.com/coinmonks/zokrates-zksnarks-on-ethereum-made-easy-8022300f8ba6
 or use my Verifier.sol with Remix to generate Proofs.
